@@ -1,0 +1,324 @@
+$color_1: #a3a3a3;
+$color_2: #fff;
+$color_3: #777777;
+$color_4: #e1a9a9;
+$font-family_1: 'Montserrat', sans-serif;
+$background-color_1: #ffffff;
+$background-color_2: rgba(0, 0, 0, 0.136);
+$background-color_3: rgba(0, 0, 0, 0.244);
+$background-color_4: #fff;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $font-family_1;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+}
+.menu {
+	display: none;
+}
+.navbar {
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	background-color: $background-color_1;
+	width: 100vw;
+	height: 57px;
+    border-bottom: 3px #f29083 solid;
+}
+.navv {
+	li {
+		a {
+			color: $color_1;
+		}
+	}
+}
+.cardBorder {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border: 2px solid white;
+	transform: scale(0.95);
+	top: 0;
+	left: 0;
+}
+.card-background {
+	background-color: $background-color_2;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	color: $color_2;
+}
+
+.cardBorderThk {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border: 2px solid white;
+	transform: scale(0.95);
+	top: 0;
+	left: 0;
+}
+.card-backgroundThk {
+	background-color: $background-color_3;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	color: $color_2;
+}
+p {
+	color: $color_1;
+}
+h6 {
+	color: $color_3;
+}
+.nav-link {
+	color: $color_3;
+	&:hover {
+		color: $color_4;
+	}
+}
+#hamburger-btn {
+	display: none !important;
+}
+.social_items_bottom {
+	display: none !important;
+}
+.menu_list {
+	line-height: 30px;
+	font-size: small;
+	position: fixed;
+	top: 57px;
+	width: 0vw;
+	height: 100vh;
+	overflow: hidden;
+	transition: 1s ease;
+	padding: 0 !important;
+	z-index: 9999999;
+	background-color: $background-color_1;
+}
+.menu_list.active {
+	display: block;
+	width: 200px;
+	padding-left: 15px !important;
+}
+.cardHead {
+	font-size: 3vw;
+}
+.cardSubHead {
+	font-size: 4vw;
+}
+.cardHeadbtn {
+	font-size: 1.2vw;
+	padding: 1rem,2rem;
+}
+.gift_card {
+	font-size: 2vw;
+}
+.gift_card_text {
+	font-size: 1.2vw;
+	font-weight: bold;
+}
+.gift_card_btn {
+	font-size: 1.2vw;
+	padding: 1rem,1.5rem;
+}
+.deal_head {
+	font-size: 3vw;
+}
+.deal_size {
+	font-size: 25px;
+}
+.deal_size_time {
+	font-size: 15px;
+}
+.deal_size_btn {
+	font-size: 1.5vw;
+	padding: 1.5vw, 1.5vh;
+}
+.timer {
+	width: 85px;
+	height: 85px;
+}
+.promises_pic {
+	width: 82px;
+	height: 82px;
+}
+.promises_pic_truck {
+	width: 82px;
+	height: 70px;
+}
+.promises_pic_return {
+	width: 80px;
+	height: 82px;
+}
+.lady {
+	background-image: url("/images/dealKurti.png");
+	background-position: center;
+	background-size: cover;
+}
+.card_text {
+	font-size: 1.5vw;
+}
+.mehramLogo {
+	position: relative;
+	top: -20px;
+}
+.foot_link {
+	&:hover {
+		color: $color_4;
+	}
+}
+.wrapper{
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+  
+  .link_wrapper{
+	position: relative;
+  }
+  
+  .know_more{
+	display: block;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	font-weight: bold;
+	text-decoration: none;
+	background: #333;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: 3px solid #333;
+	transition: all .35s;
+  }
+  
+  .icon{
+	width: 50px;
+	height: 50px;
+	border: 3px solid transparent;
+	position: absolute;
+	transform: rotate(45deg);
+	right: 0;
+	top: 0;
+	z-index: -1;
+	transition: all .35s;
+  }
+  
+  .icon svg{
+	width: 30px;
+	position: absolute;
+	top: calc(50% - 15px);
+	left: calc(50% - 15px);
+	transform: rotate(-45deg);
+	fill: #d6a6a6;
+	transition: all .35s;
+  }
+  
+  .know_more:hover{
+	width: 150px;
+	border: 3px solid #dba6a6;
+	background: transparent;
+	color: #dba6a6;
+  }
+  
+  .know_more:hover + .icon{
+	border: 3px solid #dba6a6;
+	right: -25%;
+  }
+  .prodAdd{
+	text-decoration: none;
+	color: white;
+  }
+  .prodAdd:hover{
+	text-decoration: none;
+	color: rgb(108, 71, 71);
+  }
+
+
+//  .carousel-inner > .item {
+//     position: relative;
+//     display: none;
+//     -webkit-transition: 2s ease-in-out left;
+//     -moz-transition: 2s ease-in-out left;
+//     -o-transition: 2s ease-in-out left;
+//     transition: 2s ease-in-out left;
+// }
+
+
+@media (max-width:480px) {
+	.partyCard {
+		size: 2rem;
+	}
+	#hamburger-btn {
+		display: flex !important;
+	}
+}
+@media (max-width:600px) {
+	.icon_list {
+		display: flex;
+	}
+	.social_items {
+		display: none;
+	}
+	.social_items_bottom {
+		display: flex !important;
+	}
+	#hamburger-btn {
+		display: flex !important;
+	}
+}
+@media (max-width:768px) {
+	.partyCard {
+		size: 2rem;
+	}
+	#hamburger-btn {
+		display: flex !important;
+	}
+	.menu-show {
+		position: fixed;
+		z-index: 999;
+		top: 57px;
+		background-color: $background-color_4;
+	}
+	.mobile_nav {
+		position: sticky;
+		top: 0;
+	}
+	.bars {
+		top: 10px;
+	}
+	.mehram_edit_head {
+		padding-left: 65px;
+	}
+	.social_items {
+		display: none;
+	}
+	.social_items_bottom {
+		display: flex !important;
+	}
+}
+@media (max-width:925px) {
+	.navbar_item {
+		display: none;
+	}
+	#hamburger-btn {
+		display: flex !important;
+	}
+	.menu {
+		display: flex;
+		z-index: 999999;
+	}
+}

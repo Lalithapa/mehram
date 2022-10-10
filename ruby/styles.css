@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.menu {
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 57px;
+  border-bottom: 3px #f29083 solid;
+}
+
+.navv li a {
+  color: #a3a3a3;
+}
+
+.cardBorder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 2px solid white;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  top: 0;
+  left: 0;
+}
+
+.card-background {
+  background-color: rgba(0, 0, 0, 0.136);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+
+.cardBorderThk {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 2px solid white;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  top: 0;
+  left: 0;
+}
+
+.card-backgroundThk {
+  background-color: rgba(0, 0, 0, 0.244);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+
+p {
+  color: #a3a3a3;
+}
+
+h6 {
+  color: #777777;
+}
+
+.nav-link {
+  color: #777777;
+}
+
+.nav-link:hover {
+  color: #e1a9a9;
+}
+
+#hamburger-btn {
+  display: none !important;
+}
+
+.social_items_bottom {
+  display: none !important;
+}
+
+.menu_list {
+  line-height: 30px;
+  font-size: small;
+  position: fixed;
+  top: 57px;
+  width: 0vw;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  padding: 0 !important;
+  z-index: 9999999;
+  background-color: #ffffff;
+}
+
+.menu_list.active {
+  display: block;
+  width: 200px;
+  padding-left: 15px !important;
+}
+
+.cardHead {
+  font-size: 3vw;
+}
+
+.cardSubHead {
+  font-size: 4vw;
+}
+
+.cardHeadbtn {
+  font-size: 1.2vw;
+  padding: 1rem,2rem;
+}
+
+.gift_card {
+  font-size: 2vw;
+}
+
+.gift_card_text {
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+.gift_card_btn {
+  font-size: 1.2vw;
+  padding: 1rem,1.5rem;
+}
+
+.deal_head {
+  font-size: 3vw;
+}
+
+.deal_size {
+  font-size: 25px;
+}
+
+.deal_size_time {
+  font-size: 15px;
+}
+
+.deal_size_btn {
+  font-size: 1.5vw;
+  padding: 1.5vw, 1.5vh;
+}
+
+.timer {
+  width: 85px;
+  height: 85px;
+}
+
+.promises_pic {
+  width: 82px;
+  height: 82px;
+}
+
+.promises_pic_truck {
+  width: 82px;
+  height: 70px;
+}
+
+.promises_pic_return {
+  width: 80px;
+  height: 82px;
+}
+
+.lady {
+  background-image: url("/images/dealKurti.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.card_text {
+  font-size: 1.5vw;
+}
+
+.mehramLogo {
+  position: relative;
+  top: -20px;
+}
+
+.foot_link:hover {
+  color: #e1a9a9;
+}
+
+.wrapper {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.link_wrapper {
+  position: relative;
+}
+
+.know_more {
+  display: block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.icon svg {
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  fill: #d6a6a6;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.know_more:hover {
+  width: 150px;
+  border: 3px solid #dba6a6;
+  background: transparent;
+  color: #dba6a6;
+}
+
+.know_more:hover + .icon {
+  border: 3px solid #dba6a6;
+  right: -25%;
+}
+
+.prodAdd {
+  text-decoration: none;
+  color: white;
+}
+
+.prodAdd:hover {
+  text-decoration: none;
+  color: #6c4747;
+}
+
+@media (max-width: 480px) {
+  .partyCard {
+    size: 2rem;
+  }
+  #hamburger-btn {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .icon_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .social_items {
+    display: none;
+  }
+  .social_items_bottom {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  #hamburger-btn {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .partyCard {
+    size: 2rem;
+  }
+  #hamburger-btn {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .menu-show {
+    position: fixed;
+    z-index: 999;
+    top: 57px;
+    background-color: #fff;
+  }
+  .mobile_nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  .bars {
+    top: 10px;
+  }
+  .mehram_edit_head {
+    padding-left: 65px;
+  }
+  .social_items {
+    display: none;
+  }
+  .social_items_bottom {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media (max-width: 925px) {
+  .navbar_item {
+    display: none;
+  }
+  #hamburger-btn {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 999999;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
