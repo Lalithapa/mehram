@@ -16,6 +16,7 @@ document.getElementById("demo").innerHTML = days  ;
 document.getElementById("demo2").innerHTML = hours;
 document.getElementById("demo3").innerHTML = minutes;
 document.getElementById("demo4").innerHTML = seconds;
+ console.log(days, hours, minutes , seconds , " data");
     if (t < 0) {
         clearInterval(x);
         document.getElementById("demo").innerHTML = "EXPIRED";
