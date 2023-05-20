@@ -3,6 +3,7 @@
  navbtn.addEventListener("click", function(){
      document.querySelector('.menu_list').classList.toggle("active");
  });
+debugger;
  var deadline = new Date("Aug 21, 2024 00:00:00").getTime();
 var x = setInterval(function() {
 var now = new Date().getTime();
