@@ -3,7 +3,6 @@
  navbtn.addEventListener("click", function(){
      document.querySelector('.menu_list').classList.toggle("active");
  });
-debugger;
  var deadline = new Date("Aug 21, 2024 00:00:00").getTime();
 var x = setInterval(function() {
 var now = new Date().getTime();
@@ -16,7 +15,6 @@ document.getElementById("demo").innerHTML = days  ;
 document.getElementById("demo2").innerHTML = hours;
 document.getElementById("demo3").innerHTML = minutes;
 document.getElementById("demo4").innerHTML = seconds;
- console.log(days, hours, minutes , seconds , " data");
     if (t < 0) {
         clearInterval(x);
         document.getElementById("demo").innerHTML = "EXPIRED";
